@@ -14,9 +14,9 @@ export const fetchData = async (country) => {
       data: { confirmed, recovered, deaths, lastUpdate },
     } = await axios.get(changableUrl);
 
-    // We can write it as
+    // We can also write it as
     // confirmed: confirmed .... lastUpdata: lastUpdate
-    // just am another way to do this
+    // just an another way to do this
     return {
       confirmed,
       recovered,
